@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script type="text/javascript" src="../../vue.js" charset="utt-8"></script>
+</head>
+
+<body>
+    <div id="app">
+        <div>{{a}}</div>
+        <img :src="imgURL">
+    </div>
+    <script type="text/javascript">
+        var app = new Vue({
+            el: '#app',
+            data: {
+                a: 'aaaaa',
+                imgURL: 'https://www.baidu.com/img/bd_logo1.png'
+            }
+        })
+
+    </script>
+</body>
+
+</html>

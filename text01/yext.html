@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script type="text/javascript" src="vue.js" charset="utt-8"></script>
+</head>
+
+<body>
+    <div id="app">
+        <label for="male">
+            <input type="radio" id="male" value="男" name="sex" v-model="a">男
+        </label>
+        <label for="female">
+            <input type="radio" id="female" value="女" name="sex" v-model="a">女
+        </label>
+
+        <div>111{{a}}</div>
+    </div>
+
+
+    <script type="text/javascript">
+        var app = new Vue({
+            el: '#app',
+            data: {
+                a:''
+            }
+
+        })
+
+    </script>
+</body>
+
+</html>
